@@ -16,10 +16,54 @@
             font-family: "Poppins", sans-serif;
         }
     </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'header-bg':'#264653',
+                'btn-bg':'#E76F51',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
-<body class=".poppins">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, corrupti?
-    <h1>Imam Hossain</h1>
+<body class="poppins">
+    <header class="bg-header-bg">
+        <nav class="text-white flex justify-end items-center w-[90%] mx-auto lg:w-[80%] gap-20 py-10">
+            <div class="space-x-8 text-sm hidden md:inline">
+                <a>Home</a>
+                <a>Shop</a>
+                <a>News</a>
+                <a>Contact</a>
+            </div>
+            <div>
+                <button class="py-3 px-6 bg-btn-bg rounded-lg hidden md:inline">Login</button>
+            </div>
+            <div>
+                <i class="md:hidden fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <section class="w-[90%] mx-auto lg:w-[80%] text-white flex flex-col md:flex-row justify-between items-center gap-[5%] pb-20">
+            <div class="w-[100%] md:w-[50%] pb-10 md:pb-0">
+                <p class="text-sm">Computer-controlled digital transistorized with electronic advance</p>
+                <h1 class="font-bold text-3xl lg:text-5xl py-5">Honda CBR 300R</h1>
+                <p class="text-sm font-light py-3">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="py-2 px-8 bg-btn-bg rounded-lg my-3">Purchase</button>
+            </div>
+            <div class="w-[100%] md:w-[50%]">
+                <img src="./images/others/header-img.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
