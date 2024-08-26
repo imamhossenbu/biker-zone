@@ -15,8 +15,11 @@
         .poppins{
             font-family: "Poppins", sans-serif;
         }
-        .carousel-item{
-            width: 33%;
+        .fa-star{
+            padding-right: 8px;
+        }
+        .fa-regular{
+            margin-left: -5px;
         }
     </style>
     <script>
@@ -27,6 +30,7 @@
                 clifford: '#da373d',
                 'header-bg':'#264653',
                 'btn-bg':'#E76F51',
+                'p-color':'#23A6F0',
               }
             }
           }
@@ -65,7 +69,7 @@
     <main class="w-[90%] mx-auto lg:w-[80%]">
         <section class="my-20 lg:my-10 relative">
             <div class="text-center">
-                <h1 class="font-bold text-2xl lg:text-4xl pb-3">Featured Bikes In This Year</h1>
+                <h1 class="font-bold text-2xl lg:text-5xl pb-3">Featured Bikes In This Year</h1>
                 <p class="text-base lg:text-xs text-btn-bg pb-3">Best bike collection</p>
             </div>
             <div class="w-[7%] hidden lg:inline border border-btn-bg text-center absolute right-[47%]">
@@ -73,28 +77,95 @@
             </div>
             <div class="mt-10 mb-32">
                 
-                <div class="carousel rounded-box">
-                    <div class="carousel-item">
+                <div class="carousel flex-col  items-center md:flex-row rounded-box">
+                    <div class="carousel-item py-8 md:py-0 w-[100%] md:w-[33%]">
                       <img
                         src="./images/slider/bike1.png"
                         alt="Burger" />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item py-8 md:py-0 w-[100%] md:w-[33%]">
                       <img
                         src="./images/slider/bike2.png"
                         alt="Burger" />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item py-8 md:py-0 w-[100%] md:w-[33%]">
                       <img
                         src="./images/slider/bike4.png"
                         alt="Burger" />
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item pt-8 md:py-0 w-[100%] md:w-[33%]">
                       <img
                         src="./images/slider/bike3.png"
                         alt="Burger" />
                     </div>
                   </div>
+            </div>
+        </section>
+        <div>
+            <h1 class="font-bold text-center text-5xl pb-10">Latest News</h1>
+        </div>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+                <div class="p-4 border rounded-lg">
+                    <img src="./images/others/latest1.png" alt="">
+                    <h1 class="font-bold text-2xl pt-8 pb-5">Ducati XDIAVEL S-73</h1>
+                    <p class="text-sm pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                    <button class="py-3 px-6 bg-btn-bg text-white rounded-lg">Read More</button>
+                </div>
+            <div class="p-4 border rounded-lg">
+                <img src="./images/others/latest2.png" alt="">
+                <h1 class="font-bold text-2xl pt-8 pb-5">Motorcycles & Scooters</h1>
+                <p class="text-sm pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                <button class="py-3 px-6 border border-btn-bg text-btn-bg rounded-lg">Read More</button>
+            </div>
+            <div class="p-4 border rounded-lg">
+                <img src="./images/others/latest3.png" alt="">
+                <h1 class="font-bold text-2xl pt-8 pb-5">2021 Honda CBR500R</h1>
+                <p class="text-sm pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
+                <button class="py-3 px-6 border border-btn-bg text-btn-bg  rounded-lg">Read More</button>
+            </div>
+        </section>
+        <div>
+            <h1 class="font-bold text-center text-3xl md:text-5xl pb-10">Happy <span class="text-btn-bg">Clients Says</span></h1>
+        </div>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+            <div class="p-8 border-2 border-gray-200 rounded-lg flex justify-center items-center flex-col">
+                <img class="w-[70%]" src="./images/others/user-1.png" alt="">
+                <p class="text-center text-sm py-5">Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.</p>
+                    <div class="text-amber-500 text-center pb-4">
+                        <i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h2 class="text-p-color font-bold pb-3">Regina Miles</h2>
+                    <h3 class="font-bold">Banker</h3>
+            </div>
+            <div class="p-8 border-2 border-gray-200 rounded-lg flex justify-center items-center flex-col">
+                <img class="w-[70%]" src="./images/others/user-2.png" alt="">
+                <p class="text-center text-sm py-5">Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.</p>
+                    <div class="text-amber-500 text-center pb-4">
+                        <i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h2 class="text-p-color font-bold pb-3">Regina Miles</h2>
+                    <h3 class="font-bold">Banker</h3>
+            </div>
+            <div class="p-8 border-2 border-gray-200 rounded-lg flex justify-center items-center flex-col">
+                <img class="w-[70%]" src="./images/others/user-3.png" alt="">
+                <p class="text-center text-sm py-5">Slate helps you see how 
+                    many more days you need 
+                    to work to reach your financial 
+                    goal for the month and year.</p>
+                    <div class="text-amber-500 text-center pb-4">
+                        <i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"> </i><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h2 class="text-p-color font-bold pb-3">Regina Miles</h2>
+                    <h3 class="font-bold">Banker</h3>
             </div>
         </section>
     </main>
